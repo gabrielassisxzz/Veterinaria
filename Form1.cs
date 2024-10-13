@@ -26,40 +26,9 @@ namespace Veterinaria
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            Raca dados = new Raca();
-            dados.nomeraca = textBox1.Text;
 
-            //Definido o Controle Raca C_Raca
-            C_Raca cr = new C_Raca();
-            cr.Insere_Dados(dados);
-        }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            int dados = Int32.Parse(textBox1.Text);
 
-            C_Raca cr = new C_Raca();
-            cr.Apaga_Dados(dados);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Raca raca = new Raca();   
-            raca.codraca = Int32.Parse(textBox1.Text);
-            raca.nomeraca = textBox2.Text;
-
-            C_Raca cr = new C_Raca();
-            cr.Atualizar_Dados(raca);
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            FrmRaca frmraca = new FrmRaca();
-            frmraca.ShowDialog();
-
-        }
 
         private void ruaToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -148,6 +117,12 @@ namespace Veterinaria
         {
             FrmRaca frmRaca = new FrmRaca();
             frmRaca.ShowDialog();   
+        }
+
+        private void lojaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          FrmLoja loja = new FrmLoja();
+            loja.ShowDialog();  
         }
     }
 }

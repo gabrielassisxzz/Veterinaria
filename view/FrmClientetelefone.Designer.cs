@@ -1,6 +1,6 @@
 ﻿namespace Veterinaria.view
 {
-    partial class FrmPais
+    partial class FrmClientetelefone
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.grbClienteTel = new System.Windows.Forms.GroupBox();
+            this.cmbTelefone = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cmbCliente = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnNovo = new System.Windows.Forms.ToolStripButton();
             this.btnSalvar = new System.Windows.Forms.ToolStripButton();
@@ -44,18 +49,63 @@
             this.txtBuscar = new System.Windows.Forms.ToolStripTextBox();
             this.btnBuscar = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.txtPais = new System.Windows.Forms.TextBox();
+            this.txtCliente = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Picture = new System.Windows.Forms.PictureBox();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.btnImagem = new System.Windows.Forms.Button();
+            this.grbClienteTel.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Picture)).BeginInit();
             this.SuspendLayout();
+            // 
+            // grbClienteTel
+            // 
+            this.grbClienteTel.Controls.Add(this.cmbTelefone);
+            this.grbClienteTel.Controls.Add(this.label7);
+            this.grbClienteTel.Controls.Add(this.cmbCliente);
+            this.grbClienteTel.Controls.Add(this.label4);
+            this.grbClienteTel.Location = new System.Drawing.Point(19, 102);
+            this.grbClienteTel.Name = "grbClienteTel";
+            this.grbClienteTel.Size = new System.Drawing.Size(269, 154);
+            this.grbClienteTel.TabIndex = 41;
+            this.grbClienteTel.TabStop = false;
+            this.grbClienteTel.Text = "ClienteTell";
+            this.grbClienteTel.Enter += new System.EventHandler(this.grbEndereco_Enter);
+            // 
+            // cmbTelefone
+            // 
+            this.cmbTelefone.FormattingEnabled = true;
+            this.cmbTelefone.Location = new System.Drawing.Point(63, 78);
+            this.cmbTelefone.Name = "cmbTelefone";
+            this.cmbTelefone.Size = new System.Drawing.Size(169, 21);
+            this.cmbTelefone.TabIndex = 23;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(11, 81);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 13);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Telefone:";
+            // 
+            // cmbCliente
+            // 
+            this.cmbCliente.FormattingEnabled = true;
+            this.cmbCliente.Location = new System.Drawing.Point(63, 51);
+            this.cmbCliente.Name = "cmbCliente";
+            this.cmbCliente.Size = new System.Drawing.Size(169, 21);
+            this.cmbCliente.TabIndex = 17;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(10, 54);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 13);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Cliente:";
             // 
             // toolStrip1
             // 
@@ -78,8 +128,8 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(808, 39);
-            this.toolStrip1.TabIndex = 11;
+            this.toolStrip1.Size = new System.Drawing.Size(602, 39);
+            this.toolStrip1.TabIndex = 38;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // btnNovo
@@ -214,97 +264,69 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(36, 36);
             this.toolStripButton1.Text = "toolStripButton1";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
-            // txtPais
+            // txtCliente
             // 
-            this.txtPais.Enabled = false;
-            this.txtPais.Location = new System.Drawing.Point(51, 58);
-            this.txtPais.Name = "txtPais";
-            this.txtPais.Size = new System.Drawing.Size(517, 20);
-            this.txtPais.TabIndex = 10;
+            this.txtCliente.Enabled = false;
+            this.txtCliente.Location = new System.Drawing.Point(57, 54);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(363, 20);
+            this.txtCliente.TabIndex = 37;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 66);
+            this.label2.Location = new System.Drawing.Point(16, 57);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Pais:";
+            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.TabIndex = 36;
+            this.label2.Text = "Nome:";
             // 
             // txtCodigo
             // 
             this.txtCodigo.Enabled = false;
-            this.txtCodigo.Location = new System.Drawing.Point(51, 37);
+            this.txtCodigo.Location = new System.Drawing.Point(57, 18);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(86, 20);
-            this.txtCodigo.TabIndex = 8;
+            this.txtCodigo.TabIndex = 35;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 40);
+            this.label1.Location = new System.Drawing.Point(16, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 7;
+            this.label1.TabIndex = 34;
             this.label1.Text = "Código:";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 95);
+            this.dataGridView1.Location = new System.Drawing.Point(5, 262);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(330, 256);
-            this.dataGridView1.TabIndex = 6;
+            this.dataGridView1.Size = new System.Drawing.Size(585, 125);
+            this.dataGridView1.TabIndex = 33;
             // 
-            // Picture
-            // 
-            this.Picture.Location = new System.Drawing.Point(363, 95);
-            this.Picture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Picture.Name = "Picture";
-            this.Picture.Size = new System.Drawing.Size(404, 256);
-            this.Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Picture.TabIndex = 12;
-            this.Picture.TabStop = false;
-            this.Picture.Click += new System.EventHandler(this.Picture_Click);
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // btnImagem
-            // 
-            this.btnImagem.Location = new System.Drawing.Point(659, 433);
-            this.btnImagem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnImagem.Name = "btnImagem";
-            this.btnImagem.Size = new System.Drawing.Size(56, 19);
-            this.btnImagem.TabIndex = 13;
-            this.btnImagem.Text = "Foto";
-            this.btnImagem.UseVisualStyleBackColor = true;
-            this.btnImagem.Click += new System.EventHandler(this.btnImagem_Click);
-            // 
-            // FrmPais
+            // FrmClienteTelefone
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(808, 469);
-            this.Controls.Add(this.btnImagem);
-            this.Controls.Add(this.Picture);
+            this.ClientSize = new System.Drawing.Size(602, 397);
+            this.Controls.Add(this.grbClienteTel);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.txtPais);
+            this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "FrmPais";
-            this.Text = "FrmPais";
+            this.Name = "FrmClienteTelefone";
+            this.Text = "FrmClienteTelefone";
+            this.grbClienteTel.ResumeLayout(false);
+            this.grbClienteTel.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,6 +334,11 @@
 
         #endregion
 
+        private System.Windows.Forms.GroupBox grbClienteTel;
+        private System.Windows.Forms.ComboBox cmbTelefone;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cmbCliente;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnNovo;
         private System.Windows.Forms.ToolStripButton btnSalvar;
@@ -327,14 +354,11 @@
         private System.Windows.Forms.ToolStripLabel lblBuscar;
         private System.Windows.Forms.ToolStripTextBox txtBuscar;
         private System.Windows.Forms.ToolStripButton btnBuscar;
-        private System.Windows.Forms.TextBox txtPais;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.TextBox txtCliente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.PictureBox Picture;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button btnImagem;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }

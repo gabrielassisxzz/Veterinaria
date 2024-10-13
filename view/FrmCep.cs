@@ -276,6 +276,11 @@ namespace Veterinaria.view
                 this.Close();
             }
         }
+
+        private void btnApagar_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
     

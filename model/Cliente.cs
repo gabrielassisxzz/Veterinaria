@@ -21,7 +21,7 @@ namespace Veterinaria.model
         public Cidade cidade { get; set; }
         public Estado estado { get; set; }
         public Pais pais { get; set; }
-        public String numeroca {  get; set; }   
+        public String numerocasa {  get; set; }   
         public Byte[] fotocliente { get; set; }
 
         public Cliente() { }
@@ -37,7 +37,7 @@ namespace Veterinaria.model
             this.cidade = cidade;
             this.estado = estado;
             this.pais = pais;
-            this.numeroca = numeroca;
+            this.numerocasa = numerocasa;
             this.fotocliente = fotocliente;
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace Veterinaria.view
 {
-    partial class FrmPais
+    partial class FrmCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.grbEndereco = new System.Windows.Forms.GroupBox();
+            this.cmbPais = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cmbEstado = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cmbCidade = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cmbCEP = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cmbBairro = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cmbRua = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtCnpj = new System.Windows.Forms.MaskedTextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnNovo = new System.Windows.Forms.ToolStripButton();
             this.btnSalvar = new System.Windows.Forms.ToolStripButton();
@@ -44,18 +61,173 @@
             this.txtBuscar = new System.Windows.Forms.ToolStripTextBox();
             this.btnBuscar = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.txtPais = new System.Windows.Forms.TextBox();
+            this.txtCliente = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Picture = new System.Windows.Forms.PictureBox();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.btnImagem = new System.Windows.Forms.Button();
+            this.grbEndereco.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Picture)).BeginInit();
             this.SuspendLayout();
+            // 
+            // grbEndereco
+            // 
+            this.grbEndereco.Controls.Add(this.cmbPais);
+            this.grbEndereco.Controls.Add(this.label10);
+            this.grbEndereco.Controls.Add(this.cmbEstado);
+            this.grbEndereco.Controls.Add(this.label8);
+            this.grbEndereco.Controls.Add(this.cmbCidade);
+            this.grbEndereco.Controls.Add(this.label9);
+            this.grbEndereco.Controls.Add(this.cmbCEP);
+            this.grbEndereco.Controls.Add(this.label7);
+            this.grbEndereco.Controls.Add(this.cmbBairro);
+            this.grbEndereco.Controls.Add(this.label6);
+            this.grbEndereco.Controls.Add(this.txtNumero);
+            this.grbEndereco.Controls.Add(this.label5);
+            this.grbEndereco.Controls.Add(this.cmbRua);
+            this.grbEndereco.Controls.Add(this.label4);
+            this.grbEndereco.Location = new System.Drawing.Point(19, 129);
+            this.grbEndereco.Name = "grbEndereco";
+            this.grbEndereco.Size = new System.Drawing.Size(555, 219);
+            this.grbEndereco.TabIndex = 32;
+            this.grbEndereco.TabStop = false;
+            this.grbEndereco.Text = "Endereco";
+            // 
+            // cmbPais
+            // 
+            this.cmbPais.FormattingEnabled = true;
+            this.cmbPais.Location = new System.Drawing.Point(63, 154);
+            this.cmbPais.Name = "cmbPais";
+            this.cmbPais.Size = new System.Drawing.Size(169, 21);
+            this.cmbPais.TabIndex = 29;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(11, 157);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(30, 13);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Pais:";
+            // 
+            // cmbEstado
+            // 
+            this.cmbEstado.FormattingEnabled = true;
+            this.cmbEstado.Location = new System.Drawing.Point(63, 127);
+            this.cmbEstado.Name = "cmbEstado";
+            this.cmbEstado.Size = new System.Drawing.Size(169, 21);
+            this.cmbEstado.TabIndex = 27;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(10, 129);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 13);
+            this.label8.TabIndex = 26;
+            this.label8.Text = "Estado:";
+            // 
+            // cmbCidade
+            // 
+            this.cmbCidade.FormattingEnabled = true;
+            this.cmbCidade.Location = new System.Drawing.Point(63, 100);
+            this.cmbCidade.Name = "cmbCidade";
+            this.cmbCidade.Size = new System.Drawing.Size(169, 21);
+            this.cmbCidade.TabIndex = 25;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(10, 103);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(43, 13);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "Cidade:";
+            // 
+            // cmbCEP
+            // 
+            this.cmbCEP.FormattingEnabled = true;
+            this.cmbCEP.Location = new System.Drawing.Point(63, 73);
+            this.cmbCEP.Name = "cmbCEP";
+            this.cmbCEP.Size = new System.Drawing.Size(169, 21);
+            this.cmbCEP.TabIndex = 23;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(11, 81);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(31, 13);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "CEP:";
+            // 
+            // cmbBairro
+            // 
+            this.cmbBairro.FormattingEnabled = true;
+            this.cmbBairro.Location = new System.Drawing.Point(63, 19);
+            this.cmbBairro.Name = "cmbBairro";
+            this.cmbBairro.Size = new System.Drawing.Size(169, 21);
+            this.cmbBairro.TabIndex = 21;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(11, 27);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(37, 13);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Bairro:";
+            // 
+            // txtNumero
+            // 
+            this.txtNumero.Location = new System.Drawing.Point(63, 181);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(169, 20);
+            this.txtNumero.TabIndex = 19;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(11, 181);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(47, 13);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Numero:";
+            // 
+            // cmbRua
+            // 
+            this.cmbRua.FormattingEnabled = true;
+            this.cmbRua.Location = new System.Drawing.Point(63, 46);
+            this.cmbRua.Name = "cmbRua";
+            this.cmbRua.Size = new System.Drawing.Size(169, 21);
+            this.cmbRua.TabIndex = 17;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(10, 54);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(30, 13);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Rua:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(21, 99);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(30, 13);
+            this.label3.TabIndex = 31;
+            this.label3.Text = "CPF:";
+            // 
+            // txtCnpj
+            // 
+            this.txtCnpj.Location = new System.Drawing.Point(57, 96);
+            this.txtCnpj.Mask = "000000000-00";
+            this.txtCnpj.Name = "txtCnpj";
+            this.txtCnpj.Size = new System.Drawing.Size(84, 20);
+            this.txtCnpj.TabIndex = 30;
             // 
             // toolStrip1
             // 
@@ -78,8 +250,8 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(808, 39);
-            this.toolStrip1.TabIndex = 11;
+            this.toolStrip1.Size = new System.Drawing.Size(609, 39);
+            this.toolStrip1.TabIndex = 29;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // btnNovo
@@ -216,95 +388,70 @@
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
-            // txtPais
+            // txtCliente
             // 
-            this.txtPais.Enabled = false;
-            this.txtPais.Location = new System.Drawing.Point(51, 58);
-            this.txtPais.Name = "txtPais";
-            this.txtPais.Size = new System.Drawing.Size(517, 20);
-            this.txtPais.TabIndex = 10;
+            this.txtCliente.Enabled = false;
+            this.txtCliente.Location = new System.Drawing.Point(57, 72);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(363, 20);
+            this.txtCliente.TabIndex = 28;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 66);
+            this.label2.Location = new System.Drawing.Point(16, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Pais:";
+            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Nome:";
             // 
             // txtCodigo
             // 
             this.txtCodigo.Enabled = false;
-            this.txtCodigo.Location = new System.Drawing.Point(51, 37);
+            this.txtCodigo.Location = new System.Drawing.Point(57, 45);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(86, 20);
-            this.txtCodigo.TabIndex = 8;
+            this.txtCodigo.TabIndex = 26;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 40);
+            this.label1.Location = new System.Drawing.Point(16, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 7;
+            this.label1.TabIndex = 25;
             this.label1.Text = "Código:";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 95);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 380);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(330, 256);
-            this.dataGridView1.TabIndex = 6;
+            this.dataGridView1.Size = new System.Drawing.Size(585, 125);
+            this.dataGridView1.TabIndex = 24;
             // 
-            // Picture
-            // 
-            this.Picture.Location = new System.Drawing.Point(363, 95);
-            this.Picture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Picture.Name = "Picture";
-            this.Picture.Size = new System.Drawing.Size(404, 256);
-            this.Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Picture.TabIndex = 12;
-            this.Picture.TabStop = false;
-            this.Picture.Click += new System.EventHandler(this.Picture_Click);
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // btnImagem
-            // 
-            this.btnImagem.Location = new System.Drawing.Point(659, 433);
-            this.btnImagem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnImagem.Name = "btnImagem";
-            this.btnImagem.Size = new System.Drawing.Size(56, 19);
-            this.btnImagem.TabIndex = 13;
-            this.btnImagem.Text = "Foto";
-            this.btnImagem.UseVisualStyleBackColor = true;
-            this.btnImagem.Click += new System.EventHandler(this.btnImagem_Click);
-            // 
-            // FrmPais
+            // FrmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(808, 469);
-            this.Controls.Add(this.btnImagem);
-            this.Controls.Add(this.Picture);
+            this.ClientSize = new System.Drawing.Size(609, 517);
+            this.Controls.Add(this.grbEndereco);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtCnpj);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.txtPais);
+            this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "FrmPais";
-            this.Text = "FrmPais";
+            this.Name = "FrmCliente";
+            this.Text = "FrmCliente";
+            this.grbEndereco.ResumeLayout(false);
+            this.grbEndereco.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,6 +459,23 @@
 
         #endregion
 
+        private System.Windows.Forms.GroupBox grbEndereco;
+        private System.Windows.Forms.ComboBox cmbPais;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cmbEstado;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cmbCidade;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cmbCEP;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cmbBairro;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtNumero;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cmbRua;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.MaskedTextBox txtCnpj;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnNovo;
         private System.Windows.Forms.ToolStripButton btnSalvar;
@@ -327,14 +491,11 @@
         private System.Windows.Forms.ToolStripLabel lblBuscar;
         private System.Windows.Forms.ToolStripTextBox txtBuscar;
         private System.Windows.Forms.ToolStripButton btnBuscar;
-        private System.Windows.Forms.TextBox txtPais;
+        private System.Windows.Forms.TextBox txtCliente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.PictureBox Picture;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button btnImagem;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }

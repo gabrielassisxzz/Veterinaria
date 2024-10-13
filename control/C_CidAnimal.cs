@@ -18,7 +18,6 @@ namespace Veterinaria.control
         SqlCommand cmd;
         DataTable dt_cidanimal;
         SqlDataAdapter da_cidanimal;
-
         String sqlInsere = "insert into cidanimal(nomecidanimal, descricao) values(@pnome, @pdescricao)";
         String sqlApaga = "delete from cidanimal where codcidanimal = @pcod";
         String sqlAtualiza = "update cidanimal set nomecidanimal = @pnome, descricao = @pdescricao where codcidanimal = @pcod";

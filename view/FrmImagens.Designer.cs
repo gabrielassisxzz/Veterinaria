@@ -1,6 +1,6 @@
 ﻿namespace Veterinaria.view
 {
-    partial class FrmPais
+    partial class FrmImagens
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.Picture = new System.Windows.Forms.PictureBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnNovo = new System.Windows.Forms.ToolStripButton();
             this.btnSalvar = new System.Windows.Forms.ToolStripButton();
@@ -44,18 +45,29 @@
             this.txtBuscar = new System.Windows.Forms.ToolStripTextBox();
             this.btnBuscar = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.txtPais = new System.Windows.Forms.TextBox();
+            this.txtDescrição = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Picture = new System.Windows.Forms.PictureBox();
+            this.cmbProduto = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.btnImagem = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.Picture)).BeginInit();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Picture)).BeginInit();
             this.SuspendLayout();
+            // 
+            // Picture
+            // 
+            this.Picture.Location = new System.Drawing.Point(361, 130);
+            this.Picture.Margin = new System.Windows.Forms.Padding(2);
+            this.Picture.Name = "Picture";
+            this.Picture.Size = new System.Drawing.Size(404, 256);
+            this.Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Picture.TabIndex = 19;
+            this.Picture.TabStop = false;
             // 
             // toolStrip1
             // 
@@ -78,8 +90,8 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(808, 39);
-            this.toolStrip1.TabIndex = 11;
+            this.toolStrip1.Size = new System.Drawing.Size(800, 39);
+            this.toolStrip1.TabIndex = 18;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // btnNovo
@@ -216,96 +228,102 @@
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
-            // txtPais
+            // txtDescrição
             // 
-            this.txtPais.Enabled = false;
-            this.txtPais.Location = new System.Drawing.Point(51, 58);
-            this.txtPais.Name = "txtPais";
-            this.txtPais.Size = new System.Drawing.Size(517, 20);
-            this.txtPais.TabIndex = 10;
+            this.txtDescrição.Enabled = false;
+            this.txtDescrição.Location = new System.Drawing.Point(72, 77);
+            this.txtDescrição.Name = "txtDescrição";
+            this.txtDescrição.Size = new System.Drawing.Size(517, 20);
+            this.txtDescrição.TabIndex = 17;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 66);
+            this.label2.Location = new System.Drawing.Point(8, 77);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Pais:";
+            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Descrição:";
             // 
             // txtCodigo
             // 
             this.txtCodigo.Enabled = false;
-            this.txtCodigo.Location = new System.Drawing.Point(51, 37);
+            this.txtCodigo.Location = new System.Drawing.Point(68, 51);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(86, 20);
-            this.txtCodigo.TabIndex = 8;
+            this.txtCodigo.TabIndex = 15;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 40);
+            this.label1.Location = new System.Drawing.Point(8, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 7;
+            this.label1.TabIndex = 14;
             this.label1.Text = "Código:";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 95);
+            this.dataGridView1.Location = new System.Drawing.Point(11, 130);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(330, 256);
-            this.dataGridView1.TabIndex = 6;
+            this.dataGridView1.TabIndex = 13;
             // 
-            // Picture
+            // cmbProduto
             // 
-            this.Picture.Location = new System.Drawing.Point(363, 95);
-            this.Picture.Margin = new System.Windows.Forms.Padding(2);
-            this.Picture.Name = "Picture";
-            this.Picture.Size = new System.Drawing.Size(404, 256);
-            this.Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Picture.TabIndex = 12;
-            this.Picture.TabStop = false;
-            this.Picture.Click += new System.EventHandler(this.Picture_Click);
+            this.cmbProduto.FormattingEnabled = true;
+            this.cmbProduto.Location = new System.Drawing.Point(72, 103);
+            this.cmbProduto.Name = "cmbProduto";
+            this.cmbProduto.Size = new System.Drawing.Size(169, 21);
+            this.cmbProduto.TabIndex = 23;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(8, 106);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(47, 13);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Produto:";
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // btnImagem
             // 
-            this.btnImagem.Location = new System.Drawing.Point(659, 433);
+            this.btnImagem.Location = new System.Drawing.Point(263, 106);
             this.btnImagem.Margin = new System.Windows.Forms.Padding(2);
             this.btnImagem.Name = "btnImagem";
             this.btnImagem.Size = new System.Drawing.Size(56, 19);
-            this.btnImagem.TabIndex = 13;
+            this.btnImagem.TabIndex = 24;
             this.btnImagem.Text = "Foto";
             this.btnImagem.UseVisualStyleBackColor = true;
             this.btnImagem.Click += new System.EventHandler(this.btnImagem_Click);
             // 
-            // FrmPais
+            // FrmImagens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(808, 469);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnImagem);
+            this.Controls.Add(this.cmbProduto);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.Picture);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.txtPais);
+            this.Controls.Add(this.txtDescrição);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FrmPais";
-            this.Text = "FrmPais";
+            this.Name = "FrmImagens";
+            this.Text = "FrmImagens";
+            ((System.ComponentModel.ISupportInitialize)(this.Picture)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -313,6 +331,7 @@
 
         #endregion
 
+        private System.Windows.Forms.PictureBox Picture;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnNovo;
         private System.Windows.Forms.ToolStripButton btnSalvar;
@@ -328,14 +347,15 @@
         private System.Windows.Forms.ToolStripLabel lblBuscar;
         private System.Windows.Forms.ToolStripTextBox txtBuscar;
         private System.Windows.Forms.ToolStripButton btnBuscar;
-        private System.Windows.Forms.TextBox txtPais;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.TextBox txtDescrição;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.PictureBox Picture;
+        private System.Windows.Forms.ComboBox cmbProduto;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button btnImagem;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }

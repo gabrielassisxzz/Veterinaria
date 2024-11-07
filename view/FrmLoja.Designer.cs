@@ -88,7 +88,7 @@
             this.grbEndereco.Controls.Add(this.label5);
             this.grbEndereco.Controls.Add(this.cmbRua);
             this.grbEndereco.Controls.Add(this.label4);
-            this.grbEndereco.Location = new System.Drawing.Point(19, 93);
+            this.grbEndereco.Location = new System.Drawing.Point(12, 115);
             this.grbEndereco.Name = "grbEndereco";
             this.grbEndereco.Size = new System.Drawing.Size(555, 154);
             this.grbEndereco.TabIndex = 23;
@@ -216,7 +216,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(426, 66);
+            this.label3.Location = new System.Drawing.Point(425, 92);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 22;
@@ -224,7 +224,7 @@
             // 
             // txtCnpj
             // 
-            this.txtCnpj.Location = new System.Drawing.Point(460, 58);
+            this.txtCnpj.Location = new System.Drawing.Point(459, 84);
             this.txtCnpj.Mask = "99.999.999/9999-99";
             this.txtCnpj.Name = "txtCnpj";
             this.txtCnpj.Size = new System.Drawing.Size(114, 20);
@@ -392,7 +392,7 @@
             // txtLoja
             // 
             this.txtLoja.Enabled = false;
-            this.txtLoja.Location = new System.Drawing.Point(57, 58);
+            this.txtLoja.Location = new System.Drawing.Point(56, 89);
             this.txtLoja.Name = "txtLoja";
             this.txtLoja.Size = new System.Drawing.Size(363, 20);
             this.txtLoja.TabIndex = 19;
@@ -400,7 +400,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 66);
+            this.label2.Location = new System.Drawing.Point(15, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(30, 13);
             this.label2.TabIndex = 18;
@@ -409,7 +409,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Enabled = false;
-            this.txtCodigo.Location = new System.Drawing.Point(57, 32);
+            this.txtCodigo.Location = new System.Drawing.Point(56, 63);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(86, 20);
             this.txtCodigo.TabIndex = 17;
@@ -417,7 +417,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 40);
+            this.label1.Location = new System.Drawing.Point(15, 66);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 16;
@@ -426,7 +426,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 254);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 275);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(562, 125);
@@ -436,7 +436,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(607, 422);
+            this.ClientSize = new System.Drawing.Size(607, 442);
             this.Controls.Add(this.grbEndereco);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCnpj);

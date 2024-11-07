@@ -130,5 +130,34 @@ namespace Veterinaria
             FrmCliente frmCliente = new FrmCliente();
             frmCliente.ShowDialog();
         }
+
+        private void animalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAnimal frmAnimal = new FrmAnimal();
+                frmAnimal.ShowDialog();
+        }
+
+        private void funcionarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmFuncionario frmFuncionario = new FrmFuncionario();
+            frmFuncionario.ShowDialog();
+        }
+
+        private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmProduto frmProduto = new FrmProduto();
+            frmProduto.ShowDialog();
+        }
+
+        private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void imagensToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmImagens frmImgs = new FrmImagens();
+            frmImgs.ShowDialog();
+        }
     }
 }

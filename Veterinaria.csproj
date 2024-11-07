@@ -47,16 +47,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="conection\Conexao.cs" />
+    <Compile Include="control\C_Animal.cs" />
     <Compile Include="control\C_CidAnimal.cs" />
     <Compile Include="control\C_Cliente.cs" />
     <Compile Include="control\C_Estado.cs" />
+    <Compile Include="control\C_Funcionario.cs" />
+    <Compile Include="control\C_Imagens.cs" />
     <Compile Include="control\C_Loja.cs" />
     <Compile Include="control\C_Marca.cs" />
     <Compile Include="control\C_Bairro.cs" />
     <Compile Include="control\C_Cep.cs" />
     <Compile Include="control\C_CIdade.cs" />
+    <Compile Include="control\C_Produto.cs" />
     <Compile Include="control\C_Raca.cs" />
     <Compile Include="control\C_Rua.cs" />
+    <Compile Include="control\C_Sexo.cs" />
     <Compile Include="control\C_Telefone.cs" />
     <Compile Include="control\C_Pais.cs" />
     <Compile Include="control\C_TipoServico .cs" />
@@ -80,9 +85,11 @@
     <Compile Include="model\Estado.cs" />
     <Compile Include="model\Funcionario.cs" />
     <Compile Include="model\Funcionariotelefone.cs" />
+    <Compile Include="model\Imagens.cs" />
     <Compile Include="model\Loja.cs" />
     <Compile Include="model\Marca.cs" />
     <Compile Include="model\Pais.cs" />
+    <Compile Include="model\Produto.cs" />
     <Compile Include="model\Raca.cs" />
     <Compile Include="model\Rua.cs" />
     <Compile Include="model\Sexo.cs" />
@@ -94,6 +101,12 @@
     <Compile Include="model\Tiposervico.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="view\FrmAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmAnimal.Designer.cs">
+      <DependentUpon>FrmAnimal.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\FrmBairro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +143,18 @@
     <Compile Include="view\FrmClientetelefone.Designer.cs">
       <DependentUpon>FrmClientetelefone.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\FrmFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmFuncionario.Designer.cs">
+      <DependentUpon>FrmFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FrmImagens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmImagens.Designer.cs">
+      <DependentUpon>FrmImagens.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\FrmLoja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +172,12 @@
     </Compile>
     <Compile Include="view\FrmPais.Designer.cs">
       <DependentUpon>FrmPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FrmProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmProduto.Designer.cs">
+      <DependentUpon>FrmProduto.cs</DependentUpon>
     </Compile>
     <Compile Include="view\FrmRaca.cs">
       <SubType>Form</SubType>
@@ -203,6 +234,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="view\FrmAnimal.resx">
+      <DependentUpon>FrmAnimal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\FrmBairro.resx">
       <DependentUpon>FrmBairro.cs</DependentUpon>
     </EmbeddedResource>
@@ -221,6 +255,12 @@
     <EmbeddedResource Include="view\FrmClientetelefone.resx">
       <DependentUpon>FrmClientetelefone.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmFuncionario.resx">
+      <DependentUpon>FrmFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmImagens.resx">
+      <DependentUpon>FrmImagens.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\FrmLoja.resx">
       <DependentUpon>FrmLoja.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,6 +269,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\FrmPais.resx">
       <DependentUpon>FrmPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmProduto.resx">
+      <DependentUpon>FrmProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\FrmRaca.resx">
       <DependentUpon>FrmRaca.cs</DependentUpon>

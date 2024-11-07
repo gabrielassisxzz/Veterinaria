@@ -8,11 +8,16 @@ namespace Veterinaria.model
 {
     internal class Produto
     {
-        public int codproduto {  get; set; }
+        public int codproduto {  get; set; }  
         public String nomeproduto { get; set; }
-        public Marca marca { get; set; }
-        public double quantidade { get; set; }
-        public double valor {  get; set; }
+
+       public Marca marca { get; set; }
+
+        public Double quantidadeproduto { get; set; }
+
+        public Double valorproduto { get; set; }
+
         public Tipoproduto tipoproduto { get; set; }
+
     }
 }

@@ -347,6 +347,11 @@ namespace Veterinaria.view
         {
 
         }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }
 

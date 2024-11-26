@@ -159,5 +159,62 @@ namespace Veterinaria
             FrmImagens frmImgs = new FrmImagens();
             frmImgs.ShowDialog();
         }
+
+        private void vendasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmVendas frmVenda = new FrmVendas(); 
+            frmVenda.ShowDialog();
+        }
+
+ 
+        private void vendasProdutosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmVendasProdutos frmVendasProdutos = new FrmVendasProdutos();
+            frmVendasProdutos.ShowDialog();
+        }
+
+        private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void vENDASPRODUTOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmVendasProdutos frmVendasProdutos = new FrmVendasProdutos();
+                frmVendasProdutos.ShowDialog();
+        }
+
+        private void vENDASERVICOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmVendaServico frmVendaServico = new FrmVendaServico();
+            frmVendaServico.ShowDialog();
+        }
+
+        private void iTENSVENDASERVICOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmItensVendaServico frmItensVendaServico = new FrmItensVendaServico();
+            frmItensVendaServico.ShowDialog();
+
+        }
+
+        private void cLIENTETELEFONEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmClienteTelefone frmClienteTelefone = new FrmClienteTelefone();
+            frmClienteTelefone.ShowDialog();
+        }
+
+
+
+        private void tELEFONELOJAToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FrmTelefoneLoja frmTelefoneLoja = new FrmTelefoneLoja();
+            frmTelefoneLoja.ShowDialog();
+        }
+
+        private void fUNCIONARIOTELEFONEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmFuncionarioTelefone frmFuncionarioTelefone = new FrmFuncionarioTelefone();
+            frmFuncionarioTelefone.ShowDialog();
+        }
     }
 }

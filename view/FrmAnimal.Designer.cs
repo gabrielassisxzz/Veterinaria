@@ -74,87 +74,77 @@
             this.grbEndereco.Controls.Add(this.label6);
             this.grbEndereco.Controls.Add(this.cmbSexo);
             this.grbEndereco.Controls.Add(this.label4);
-            this.grbEndereco.Location = new System.Drawing.Point(25, 178);
-            this.grbEndereco.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbEndereco.Location = new System.Drawing.Point(208, 42);
             this.grbEndereco.Name = "grbEndereco";
-            this.grbEndereco.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.grbEndereco.Size = new System.Drawing.Size(740, 119);
+            this.grbEndereco.Size = new System.Drawing.Size(395, 96);
             this.grbEndereco.TabIndex = 32;
             this.grbEndereco.TabStop = false;
             // 
             // cmbCliente
             // 
             this.cmbCliente.FormattingEnabled = true;
-            this.cmbCliente.Location = new System.Drawing.Point(116, 43);
-            this.cmbCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbCliente.Location = new System.Drawing.Point(79, 26);
             this.cmbCliente.Name = "cmbCliente";
-            this.cmbCliente.Size = new System.Drawing.Size(224, 24);
+            this.cmbCliente.Size = new System.Drawing.Size(107, 21);
             this.cmbCliente.TabIndex = 29;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(21, 53);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(8, 34);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 16);
+            this.label10.Size = new System.Drawing.Size(42, 13);
             this.label10.TabIndex = 28;
             this.label10.Text = "Cliente:";
             // 
             // cmbTipoAnimal
             // 
             this.cmbTipoAnimal.FormattingEnabled = true;
-            this.cmbTipoAnimal.Location = new System.Drawing.Point(455, 10);
-            this.cmbTipoAnimal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbTipoAnimal.Location = new System.Drawing.Point(275, 15);
             this.cmbTipoAnimal.Name = "cmbTipoAnimal";
-            this.cmbTipoAnimal.Size = new System.Drawing.Size(224, 24);
+            this.cmbTipoAnimal.Size = new System.Drawing.Size(111, 21);
             this.cmbTipoAnimal.TabIndex = 25;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(360, 20);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(204, 23);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(82, 16);
+            this.label9.Size = new System.Drawing.Size(65, 13);
             this.label9.TabIndex = 24;
             this.label9.Text = "Tipo Animal:";
             // 
             // cmbRaca
             // 
             this.cmbRaca.FormattingEnabled = true;
-            this.cmbRaca.Location = new System.Drawing.Point(455, 76);
-            this.cmbRaca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbRaca.Location = new System.Drawing.Point(275, 69);
             this.cmbRaca.Name = "cmbRaca";
-            this.cmbRaca.Size = new System.Drawing.Size(224, 24);
+            this.cmbRaca.Size = new System.Drawing.Size(111, 21);
             this.cmbRaca.TabIndex = 21;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(396, 85);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(231, 76);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 16);
+            this.label6.Size = new System.Drawing.Size(36, 13);
             this.label6.TabIndex = 20;
             this.label6.Text = "Raca:";
             // 
             // cmbSexo
             // 
             this.cmbSexo.FormattingEnabled = true;
-            this.cmbSexo.Location = new System.Drawing.Point(455, 43);
-            this.cmbSexo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbSexo.Location = new System.Drawing.Point(275, 42);
             this.cmbSexo.Name = "cmbSexo";
-            this.cmbSexo.Size = new System.Drawing.Size(224, 24);
+            this.cmbSexo.Size = new System.Drawing.Size(111, 21);
             this.cmbSexo.TabIndex = 17;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(397, 53);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(232, 50);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 16);
+            this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 16;
             this.label4.Text = "Sexo:";
             // 
@@ -179,7 +169,7 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(852, 39);
+            this.toolStrip1.Size = new System.Drawing.Size(614, 39);
             this.toolStrip1.TabIndex = 29;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -288,14 +278,14 @@
             // lblBuscar
             // 
             this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(52, 36);
+            this.lblBuscar.Size = new System.Drawing.Size(42, 36);
             this.lblBuscar.Text = "Buscar";
             // 
             // txtBuscar
             // 
             this.txtBuscar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(185, 39);
+            this.txtBuscar.Size = new System.Drawing.Size(140, 39);
             // 
             // btnBuscar
             // 
@@ -320,56 +310,51 @@
             // txtAnimal
             // 
             this.txtAnimal.Enabled = false;
-            this.txtAnimal.Location = new System.Drawing.Point(125, 142);
-            this.txtAnimal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAnimal.Location = new System.Drawing.Point(106, 92);
             this.txtAnimal.Name = "txtAnimal";
-            this.txtAnimal.Size = new System.Drawing.Size(483, 22);
+            this.txtAnimal.Size = new System.Drawing.Size(96, 20);
             this.txtAnimal.TabIndex = 28;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 145);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(12, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 16);
+            this.label2.Size = new System.Drawing.Size(72, 13);
             this.label2.TabIndex = 27;
             this.label2.Text = "Nome Animal:";
             // 
             // txtCodigo
             // 
             this.txtCodigo.Enabled = false;
-            this.txtCodigo.Location = new System.Drawing.Point(76, 103);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigo.Location = new System.Drawing.Point(106, 66);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(113, 22);
+            this.txtCodigo.Size = new System.Drawing.Size(96, 20);
             this.txtCodigo.TabIndex = 26;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 113);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 66);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 16);
+            this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 25;
             this.label1.Text = "Código:";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 305);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 144);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(749, 154);
+            this.dataGridView1.Size = new System.Drawing.Size(579, 133);
             this.dataGridView1.TabIndex = 24;
             // 
             // FrmAnimal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(852, 482);
+            this.ClientSize = new System.Drawing.Size(614, 288);
             this.Controls.Add(this.grbEndereco);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.txtAnimal);
@@ -377,9 +362,8 @@
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmAnimal";
-            this.Text = "FrmAnimal";
+            this.Text = "K";
             this.Load += new System.EventHandler(this.FrmAnimal_Load);
             this.grbEndereco.ResumeLayout(false);
             this.grbEndereco.PerformLayout();

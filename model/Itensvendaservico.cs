@@ -8,10 +8,15 @@ namespace Veterinaria.model
 {
     internal class Itensvendaservico
     {
-        public Tiposervico tiposervico {  get; set; }
-        public Vendaservico vendaservico { get; set; }
-        public double quant {  get; set; }
-        public double valor { get; set; }
-        public Produto produto { get; set; }
+
+        public Tiposervico tiposervico { get; set; }
+
+        public VendaServico vendaservico { get; set; }
+
+        public Double quantidade { get; set; }
+
+        public Double valor { get; set; }
+
+        public CidAnimal cidanimal  { get; set; }
     }
 }

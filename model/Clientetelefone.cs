@@ -9,8 +9,11 @@ namespace Veterinaria.model
     /*ClienteTelefone = {codtelefonefk, codclientefk} OK */
     internal class Clientetelefone
     {
-        public Telefone telefone {  get; set; }
+        public Telefone telefone { get; set; }
         public Cliente cliente { get; set; }
 
+        
+        public string numerotelefone => telefone?.numerotelefone;
+        public string nomecliente => cliente?.nomecliente;
     }
 }

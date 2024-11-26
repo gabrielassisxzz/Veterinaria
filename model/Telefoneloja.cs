@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Veterinaria.control;
 
 namespace Veterinaria.model
 {
-    /*--TelefoneLoja = {codlojafk, codtelefonefk} OK  */
-    internal class Telefoneloja
+    class Telefoneloja
     {
-        public Loja loja {  get; set; }
         public Telefone telefone { get; set; }
+
+        public Loja loja { get; set; }
+
+        public string numerotelefone => telefone?.numerotelefone;
+        public string nomeloja => loja?.nomeloja;
     }
 }

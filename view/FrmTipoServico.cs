@@ -22,7 +22,6 @@ namespace Veterinaria.view
         {
             InitializeComponent();
 
-            //Carregar o Datagrid de Raças.
             CarregaTabela();
 
             lista_tiposervico = carregaListaTipoServico();
@@ -241,16 +240,14 @@ namespace Veterinaria.view
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            //Foi definido um atributo chamado cr do tipo C_TipoServico
+         
             C_TipoServico cr = new C_TipoServico();
             DataTable dt = new DataTable();
             dt = cr.Buscar_Filtro(txtBuscar.Text.ToString() + "%");
             Tabela_tiposervicos = dt;
-
-            //Adiciona os dados do DataTable para o DataGridView
             dataGridView1.DataSource = Tabela_tiposervicos;
 
-            //Carrega a Lista_tiposervico com o valor da consulta com parâmetro
+            
             lista_tiposervico = carregaListaTipoServicoFiltro();
 
             if (lista_tiposervico.Count >= 0)
@@ -303,7 +300,7 @@ namespace Veterinaria.view
             DataGridViewRow dr = dataGridView1.Rows[index];
             txtCodigo.Text = dr.Cells[0].Value.ToString();
             txtTipoServico.Text = dr.Cells[1].Value.ToString();
-            //txtValorTipoServico.Text = dr.Cells[3].Value.ToString();
+            
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)

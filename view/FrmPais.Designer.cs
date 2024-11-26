@@ -78,7 +78,7 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(808, 39);
+            this.toolStrip1.Size = new System.Drawing.Size(754, 39);
             this.toolStrip1.TabIndex = 11;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -219,15 +219,15 @@
             // txtPais
             // 
             this.txtPais.Enabled = false;
-            this.txtPais.Location = new System.Drawing.Point(51, 58);
+            this.txtPais.Location = new System.Drawing.Point(51, 69);
             this.txtPais.Name = "txtPais";
-            this.txtPais.Size = new System.Drawing.Size(517, 20);
+            this.txtPais.Size = new System.Drawing.Size(86, 20);
             this.txtPais.TabIndex = 10;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 66);
+            this.label2.Location = new System.Drawing.Point(10, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(30, 13);
             this.label2.TabIndex = 9;
@@ -236,7 +236,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Enabled = false;
-            this.txtCodigo.Location = new System.Drawing.Point(51, 37);
+            this.txtCodigo.Location = new System.Drawing.Point(51, 48);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(86, 20);
             this.txtCodigo.TabIndex = 8;
@@ -244,7 +244,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 40);
+            this.label1.Location = new System.Drawing.Point(10, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 7;
@@ -261,10 +261,10 @@
             // 
             // Picture
             // 
-            this.Picture.Location = new System.Drawing.Point(363, 95);
+            this.Picture.Location = new System.Drawing.Point(347, 95);
             this.Picture.Margin = new System.Windows.Forms.Padding(2);
             this.Picture.Name = "Picture";
-            this.Picture.Size = new System.Drawing.Size(404, 256);
+            this.Picture.Size = new System.Drawing.Size(399, 256);
             this.Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Picture.TabIndex = 12;
             this.Picture.TabStop = false;
@@ -277,7 +277,7 @@
             // 
             // btnImagem
             // 
-            this.btnImagem.Location = new System.Drawing.Point(659, 433);
+            this.btnImagem.Location = new System.Drawing.Point(706, 380);
             this.btnImagem.Margin = new System.Windows.Forms.Padding(2);
             this.btnImagem.Name = "btnImagem";
             this.btnImagem.Size = new System.Drawing.Size(56, 19);
@@ -290,7 +290,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(808, 469);
+            this.ClientSize = new System.Drawing.Size(754, 366);
             this.Controls.Add(this.btnImagem);
             this.Controls.Add(this.Picture);
             this.Controls.Add(this.toolStrip1);

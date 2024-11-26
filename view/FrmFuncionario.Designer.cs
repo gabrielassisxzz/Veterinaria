@@ -65,9 +65,9 @@
             this.grbEndereco.Controls.Add(this.label6);
             this.grbEndereco.Controls.Add(this.cmbLoja);
             this.grbEndereco.Controls.Add(this.label4);
-            this.grbEndereco.Location = new System.Drawing.Point(21, 132);
+            this.grbEndereco.Location = new System.Drawing.Point(12, 117);
             this.grbEndereco.Name = "grbEndereco";
-            this.grbEndereco.Size = new System.Drawing.Size(291, 118);
+            this.grbEndereco.Size = new System.Drawing.Size(236, 108);
             this.grbEndereco.TabIndex = 41;
             this.grbEndereco.TabStop = false;
             // 
@@ -76,7 +76,7 @@
             this.cmbTipoFuncionario.FormattingEnabled = true;
             this.cmbTipoFuncionario.Location = new System.Drawing.Point(103, 24);
             this.cmbTipoFuncionario.Name = "cmbTipoFuncionario";
-            this.cmbTipoFuncionario.Size = new System.Drawing.Size(169, 21);
+            this.cmbTipoFuncionario.Size = new System.Drawing.Size(113, 21);
             this.cmbTipoFuncionario.TabIndex = 21;
             // 
             // label6
@@ -93,7 +93,7 @@
             this.cmbLoja.FormattingEnabled = true;
             this.cmbLoja.Location = new System.Drawing.Point(103, 54);
             this.cmbLoja.Name = "cmbLoja";
-            this.cmbLoja.Size = new System.Drawing.Size(169, 21);
+            this.cmbLoja.Size = new System.Drawing.Size(113, 21);
             this.cmbLoja.TabIndex = 17;
             // 
             // label4
@@ -267,15 +267,15 @@
             // txtFuncionario
             // 
             this.txtFuncionario.Enabled = false;
-            this.txtFuncionario.Location = new System.Drawing.Point(89, 75);
+            this.txtFuncionario.Location = new System.Drawing.Point(89, 91);
             this.txtFuncionario.Name = "txtFuncionario";
-            this.txtFuncionario.Size = new System.Drawing.Size(363, 20);
+            this.txtFuncionario.Size = new System.Drawing.Size(86, 20);
             this.txtFuncionario.TabIndex = 37;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 78);
+            this.label2.Location = new System.Drawing.Point(18, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 13);
             this.label2.TabIndex = 36;
@@ -284,7 +284,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Enabled = false;
-            this.txtCodigo.Location = new System.Drawing.Point(89, 49);
+            this.txtCodigo.Location = new System.Drawing.Point(89, 65);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(86, 20);
             this.txtCodigo.TabIndex = 35;
@@ -292,7 +292,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 56);
+            this.label1.Location = new System.Drawing.Point(18, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 34;
@@ -301,17 +301,17 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 256);
+            this.dataGridView1.Location = new System.Drawing.Point(254, 65);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(585, 125);
+            this.dataGridView1.Size = new System.Drawing.Size(368, 160);
             this.dataGridView1.TabIndex = 33;
             // 
             // FrmFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 400);
+            this.ClientSize = new System.Drawing.Size(634, 237);
             this.Controls.Add(this.grbEndereco);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.txtFuncionario);

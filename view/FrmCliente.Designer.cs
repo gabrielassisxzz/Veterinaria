@@ -87,9 +87,9 @@
             this.grbEndereco.Controls.Add(this.label5);
             this.grbEndereco.Controls.Add(this.cmbRua);
             this.grbEndereco.Controls.Add(this.label4);
-            this.grbEndereco.Location = new System.Drawing.Point(19, 129);
+            this.grbEndereco.Location = new System.Drawing.Point(19, 131);
             this.grbEndereco.Name = "grbEndereco";
-            this.grbEndereco.Size = new System.Drawing.Size(555, 219);
+            this.grbEndereco.Size = new System.Drawing.Size(256, 219);
             this.grbEndereco.TabIndex = 32;
             this.grbEndereco.TabStop = false;
             this.grbEndereco.Text = "Endereco";
@@ -215,7 +215,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 99);
+            this.label3.Location = new System.Drawing.Point(16, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 31;
@@ -393,7 +393,7 @@
             this.txtCliente.Enabled = false;
             this.txtCliente.Location = new System.Drawing.Point(57, 72);
             this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(363, 20);
+            this.txtCliente.Size = new System.Drawing.Size(86, 20);
             this.txtCliente.TabIndex = 28;
             // 
             // label2
@@ -425,10 +425,10 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 380);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 356);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(585, 125);
+            this.dataGridView1.Size = new System.Drawing.Size(585, 138);
             this.dataGridView1.TabIndex = 24;
             // 
             // FrmCliente

@@ -26,7 +26,7 @@ namespace Veterinaria.control
         String sqlTodos = "select * from Imagens";
         String sqlFiltro = "select * from Imagens where descricao like @parametro";
 
-        // Método para obter todos os registros de imagens
+        
         public List<Imagens> DadosImagens()
         {
             List<Imagens> lista_imagens = new List<Imagens>();
@@ -62,7 +62,7 @@ namespace Veterinaria.control
             return lista_imagens;
         }
 
-        // Método para buscar imagens com um filtro
+        
         public List<Imagens> BuscarImagens(string parametro)
         {
             List<Imagens> lista_imagens = new List<Imagens>();
@@ -99,7 +99,7 @@ namespace Veterinaria.control
             return lista_imagens;
         }
 
-        // Método para inserir uma nova imagem
+        
         public void Insere_Dados(object aux)
         {
             Imagens imagem = (Imagens)aux;
@@ -138,7 +138,7 @@ namespace Veterinaria.control
 
 
 
-        // Método para atualizar uma imagem existente
+        
         public void Atualiza_Dados(object aux)
         {
             Imagens imagem = (Imagens)aux;
@@ -170,7 +170,7 @@ namespace Veterinaria.control
             }
         }
 
-        // Método para apagar uma imagem
+        
         public void Apaga_Dados(int aux)
         {
             Conexao conexao = new Conexao();
@@ -182,20 +182,27 @@ namespace Veterinaria.control
             try
             {
                 int i = cmd.ExecuteNonQuery();
+
                 if (i > 0)
                 {
                     MessageBox.Show("Imagem apagada com sucesso.");
                 }
+                else
+                {
+                    MessageBox.Show("Nenhuma imagem encontrada com o código informado.");
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao apagar imagem: " + ex.Message);
+                
+                MessageBox.Show($"Erro ao apagar imagem: {ex.Message}\n{ex.StackTrace}");
             }
             finally
             {
                 conn.Close();
             }
         }
+
 
         public object Buscar_Id(int valor)
         {

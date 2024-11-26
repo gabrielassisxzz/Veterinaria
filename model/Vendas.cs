@@ -9,9 +9,14 @@ namespace Veterinaria.model
     internal class Vendas
     {
         public int codvenda {  get; set; }
+
         public DateTime datavenda { get; set; }
+
         public Cliente cliente { get; set; }
+
         public Funcionario funcionario { get; set; }
-        public Loja Loja { get; set; }
+
+        public Loja loja { get; set; }
+
     }
 }

@@ -29,35 +29,35 @@
         private void InitializeComponent()
         {
             this.grbEndereco = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtQuantidade = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtValor = new System.Windows.Forms.TextBox();
             this.cmbMarca = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cmbTipoProduto = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.lblBuscar = new System.Windows.Forms.ToolStripLabel();
-            this.txtBuscar = new System.Windows.Forms.ToolStripTextBox();
-            this.txtProduto = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnNovo = new System.Windows.Forms.ToolStripButton();
             this.btnSalvar = new System.Windows.Forms.ToolStripButton();
             this.btnCancelar = new System.Windows.Forms.ToolStripButton();
             this.btnApagar = new System.Windows.Forms.ToolStripButton();
             this.btnEditar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnPrimeiro = new System.Windows.Forms.ToolStripButton();
             this.btnAnterior = new System.Windows.Forms.ToolStripButton();
             this.btnProximo = new System.Windows.Forms.ToolStripButton();
             this.btnUltimo = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.lblBuscar = new System.Windows.Forms.ToolStripLabel();
+            this.txtBuscar = new System.Windows.Forms.ToolStripTextBox();
             this.btnBuscar = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtValor = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtQuantidade = new System.Windows.Forms.TextBox();
+            this.txtProduto = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.grbEndereco.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -66,25 +66,63 @@
             // grbEndereco
             // 
             this.grbEndereco.Controls.Add(this.label5);
-            this.grbEndereco.Controls.Add(this.txtQuantidade);
-            this.grbEndereco.Controls.Add(this.label3);
-            this.grbEndereco.Controls.Add(this.txtValor);
             this.grbEndereco.Controls.Add(this.cmbMarca);
             this.grbEndereco.Controls.Add(this.label6);
+            this.grbEndereco.Controls.Add(this.txtQuantidade);
             this.grbEndereco.Controls.Add(this.cmbTipoProduto);
             this.grbEndereco.Controls.Add(this.label4);
-            this.grbEndereco.Location = new System.Drawing.Point(19, 137);
+            this.grbEndereco.Controls.Add(this.label3);
+            this.grbEndereco.Controls.Add(this.txtValor);
+            this.grbEndereco.Location = new System.Drawing.Point(12, 117);
             this.grbEndereco.Name = "grbEndereco";
-            this.grbEndereco.Size = new System.Drawing.Size(591, 129);
+            this.grbEndereco.Size = new System.Drawing.Size(197, 129);
             this.grbEndereco.TabIndex = 48;
             this.grbEndereco.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(9, 80);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 13);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "Quantidade:";
+            // 
+            // txtQuantidade
+            // 
+            this.txtQuantidade.Enabled = false;
+            this.txtQuantidade.Location = new System.Drawing.Point(86, 80);
+            this.txtQuantidade.Margin = new System.Windows.Forms.Padding(2);
+            this.txtQuantidade.Name = "txtQuantidade";
+            this.txtQuantidade.Size = new System.Drawing.Size(90, 20);
+            this.txtQuantidade.TabIndex = 35;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 104);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.TabIndex = 34;
+            this.label3.Text = "Valor:";
+            // 
+            // txtValor
+            // 
+            this.txtValor.Enabled = false;
+            this.txtValor.Location = new System.Drawing.Point(86, 104);
+            this.txtValor.Margin = new System.Windows.Forms.Padding(2);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(90, 20);
+            this.txtValor.TabIndex = 33;
             // 
             // cmbMarca
             // 
             this.cmbMarca.FormattingEnabled = true;
             this.cmbMarca.Location = new System.Drawing.Point(86, 24);
             this.cmbMarca.Name = "cmbMarca";
-            this.cmbMarca.Size = new System.Drawing.Size(169, 21);
+            this.cmbMarca.Size = new System.Drawing.Size(90, 21);
             this.cmbMarca.TabIndex = 21;
             // 
             // label6
@@ -99,15 +137,15 @@
             // cmbTipoProduto
             // 
             this.cmbTipoProduto.FormattingEnabled = true;
-            this.cmbTipoProduto.Location = new System.Drawing.Point(86, 102);
+            this.cmbTipoProduto.Location = new System.Drawing.Point(86, 51);
             this.cmbTipoProduto.Name = "cmbTipoProduto";
-            this.cmbTipoProduto.Size = new System.Drawing.Size(169, 21);
+            this.cmbTipoProduto.Size = new System.Drawing.Size(90, 21);
             this.cmbTipoProduto.TabIndex = 17;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 105);
+            this.label4.Location = new System.Drawing.Point(9, 54);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 13);
             this.label4.TabIndex = 16;
@@ -137,71 +175,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(623, 39);
             this.toolStrip1.TabIndex = 47;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 39);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 39);
-            // 
-            // lblBuscar
-            // 
-            this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(42, 36);
-            this.lblBuscar.Text = "Buscar";
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(140, 39);
-            // 
-            // txtProduto
-            // 
-            this.txtProduto.Enabled = false;
-            this.txtProduto.Location = new System.Drawing.Point(69, 91);
-            this.txtProduto.Name = "txtProduto";
-            this.txtProduto.Size = new System.Drawing.Size(363, 20);
-            this.txtProduto.TabIndex = 46;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 94);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
-            this.label2.TabIndex = 45;
-            this.label2.Text = "Produto:";
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Enabled = false;
-            this.txtCodigo.Location = new System.Drawing.Point(65, 59);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(86, 20);
-            this.txtCodigo.TabIndex = 44;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 62);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 43;
-            this.label1.Text = "Código:";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 291);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(585, 125);
-            this.dataGridView1.TabIndex = 42;
             // 
             // btnNovo
             // 
@@ -255,6 +228,11 @@
             this.btnEditar.Text = "toolStripButton5";
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 39);
+            // 
             // btnPrimeiro
             // 
             this.btnPrimeiro.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -295,6 +273,23 @@
             this.btnUltimo.Text = "toolStripButton4";
             this.btnUltimo.Click += new System.EventHandler(this.btnUltimo_Click);
             // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 39);
+            // 
+            // lblBuscar
+            // 
+            this.lblBuscar.Name = "lblBuscar";
+            this.lblBuscar.Size = new System.Drawing.Size(42, 36);
+            this.lblBuscar.Text = "Buscar";
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(140, 39);
+            // 
             // btnBuscar
             // 
             this.btnBuscar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -315,49 +310,54 @@
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
-            // label3
+            // txtProduto
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 77);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
-            this.label3.TabIndex = 34;
-            this.label3.Text = "Valor:";
+            this.txtProduto.Enabled = false;
+            this.txtProduto.Location = new System.Drawing.Point(98, 91);
+            this.txtProduto.Name = "txtProduto";
+            this.txtProduto.Size = new System.Drawing.Size(90, 20);
+            this.txtProduto.TabIndex = 46;
             // 
-            // txtValor
+            // label2
             // 
-            this.txtValor.Enabled = false;
-            this.txtValor.Location = new System.Drawing.Point(86, 77);
-            this.txtValor.Margin = new System.Windows.Forms.Padding(2);
-            this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(90, 20);
-            this.txtValor.TabIndex = 33;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(45, 94);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.TabIndex = 45;
+            this.label2.Text = "Produto:";
             // 
-            // label5
+            // txtCodigo
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 53);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 13);
-            this.label5.TabIndex = 36;
-            this.label5.Text = "Quantidade:";
+            this.txtCodigo.Enabled = false;
+            this.txtCodigo.Location = new System.Drawing.Point(94, 59);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(94, 20);
+            this.txtCodigo.TabIndex = 44;
             // 
-            // txtQuantidade
+            // label1
             // 
-            this.txtQuantidade.Enabled = false;
-            this.txtQuantidade.Location = new System.Drawing.Point(86, 53);
-            this.txtQuantidade.Margin = new System.Windows.Forms.Padding(2);
-            this.txtQuantidade.Name = "txtQuantidade";
-            this.txtQuantidade.Size = new System.Drawing.Size(90, 20);
-            this.txtQuantidade.TabIndex = 35;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(45, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "Código:";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(222, 65);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(389, 215);
+            this.dataGridView1.TabIndex = 42;
             // 
             // FrmProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 450);
+            this.ClientSize = new System.Drawing.Size(623, 292);
             this.Controls.Add(this.grbEndereco);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.txtProduto);

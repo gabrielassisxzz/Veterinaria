@@ -35,8 +35,8 @@ namespace Veterinaria.view
             lista_produto.Insert(0, new Produto { codproduto = 0, nomeproduto ="" });
 
             cmbProduto.DataSource = lista_produto;
-            cmbProduto.DisplayMember = "nomeProduto"; 
-            cmbProduto.ValueMember = "codProduto";    
+            cmbProduto.DisplayMember = "nomeproduto"; 
+            cmbProduto.ValueMember = "codproduto";    
 
            
             cmbProduto.SelectedIndex = 0;
@@ -65,14 +65,23 @@ namespace Veterinaria.view
             return null;
         }
 
-        
+
         private void CarregaTabela()
         {
             C_Imagens c_imagens = new C_Imagens();
-            lista_imagens = c_imagens.DadosImagens();
-            dataGridView1.DataSource = lista_imagens;
+            lista_imagens = c_imagens.DadosImagens(); 
+
+            
+            if (lista_imagens.Count > 0)
+            {
+                dataGridView1.DataSource = lista_imagens; 
+            }
+            else
+            {
+                MessageBox.Show("Nenhuma imagem encontrada.");
+            }
         }
-    
+
         public byte[] ConvertPictureBoxToByteArray(PictureBox picture)
         {
          
@@ -293,27 +302,38 @@ private void atualizaCampos()
 
         private void btnApagar_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0) // Verifica se uma linha está selecionada
+            if (dataGridView1.SelectedRows.Count > 0) 
             {
-                // Pega a linha selecionada
+                
                 var linhaSelecionada = dataGridView1.SelectedRows[0];
-                Imagens imagemSelecionada = (Imagens)linhaSelecionada.DataBoundItem; // Assume que você está usando uma lista de Imagens como DataSource
 
-                if (imagemSelecionada != null)
+                
+                var item = linhaSelecionada.DataBoundItem;
+                if (item != null)
                 {
+                    
+                    Imagens imagemSelecionada = (Imagens)item;
+                    MessageBox.Show($"Imagem selecionada: {imagemSelecionada.codimagens} - {imagemSelecionada.descricao}");
+
                     try
                     {
                         C_Imagens c_imagens = new C_Imagens();
-                        c_imagens.Apaga_Dados(imagemSelecionada.codimagens); // Usa o código da imagem selecionada
-                        CarregaTabela(); // Atualiza a tabela
+                        c_imagens.Apaga_Dados(imagemSelecionada.codimagens); 
+
+                        CarregaTabela(); 
                         MessageBox.Show("Imagem apagada com sucesso!");
-                        LimparCampos(); // Limpa os campos
-                        desativaCampos(); // Desativa os campos
+
+                        LimparCampos(); 
+                        desativaCampos(); 
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show("Erro ao apagar: " + ex.Message);
                     }
+                }
+                else
+                {
+                    MessageBox.Show("A linha selecionada não contém um item válido.");
                 }
             }
             else
@@ -321,6 +341,7 @@ private void atualizaCampos()
                 MessageBox.Show("Por favor, selecione uma imagem para apagar.");
             }
         }
+
 
         private void btnEditar_Click(object sender, EventArgs e)
         {

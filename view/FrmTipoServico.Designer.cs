@@ -78,7 +78,7 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(789, 39);
+            this.toolStrip1.Size = new System.Drawing.Size(562, 39);
             this.toolStrip1.TabIndex = 29;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -187,14 +187,14 @@
             // lblBuscar
             // 
             this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(52, 36);
+            this.lblBuscar.Size = new System.Drawing.Size(42, 36);
             this.lblBuscar.Text = "Buscar";
             // 
             // txtBuscar
             // 
             this.txtBuscar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(100, 39);
+            this.txtBuscar.Size = new System.Drawing.Size(76, 39);
             // 
             // btnBuscar
             // 
@@ -219,58 +219,54 @@
             // txtTipoServico
             // 
             this.txtTipoServico.Enabled = false;
-            this.txtTipoServico.Location = new System.Drawing.Point(77, 89);
-            this.txtTipoServico.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTipoServico.Location = new System.Drawing.Point(58, 72);
             this.txtTipoServico.Name = "txtTipoServico";
-            this.txtTipoServico.Size = new System.Drawing.Size(688, 22);
+            this.txtTipoServico.Size = new System.Drawing.Size(88, 20);
             this.txtTipoServico.TabIndex = 28;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 89);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(9, 72);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 16);
+            this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 27;
             this.label2.Text = "Marca:";
             // 
             // txtCodigo
             // 
             this.txtCodigo.Enabled = false;
-            this.txtCodigo.Location = new System.Drawing.Point(74, 58);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCodigo.Location = new System.Drawing.Point(58, 46);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(113, 22);
+            this.txtCodigo.Size = new System.Drawing.Size(90, 20);
             this.txtCodigo.TabIndex = 26;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 64);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(9, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 16);
+            this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 25;
             this.label1.Text = "Código:";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 174);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(164, 46);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(749, 274);
+            this.dataGridView1.Size = new System.Drawing.Size(374, 79);
             this.dataGridView1.TabIndex = 24;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick_1);
             // 
             // txtValorTipoServico
             // 
             this.txtValorTipoServico.Enabled = false;
-            this.txtValorTipoServico.Location = new System.Drawing.Point(77, 118);
+            this.txtValorTipoServico.Location = new System.Drawing.Point(58, 96);
+            this.txtValorTipoServico.Margin = new System.Windows.Forms.Padding(2);
             this.txtValorTipoServico.Name = "txtValorTipoServico";
-            this.txtValorTipoServico.Size = new System.Drawing.Size(119, 22);
+            this.txtValorTipoServico.Size = new System.Drawing.Size(90, 20);
             this.txtValorTipoServico.TabIndex = 30;
             // 
             // contextMenuStrip1
@@ -282,17 +278,18 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 118);
+            this.label3.Location = new System.Drawing.Point(12, 96);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 16);
+            this.label3.Size = new System.Drawing.Size(34, 13);
             this.label3.TabIndex = 32;
             this.label3.Text = "Valor:";
             // 
             // FrmTipoServico
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(789, 462);
+            this.ClientSize = new System.Drawing.Size(562, 134);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtValorTipoServico);
             this.Controls.Add(this.toolStrip1);
@@ -301,6 +298,7 @@
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmTipoServico";
             this.Text = "FrmTipoServico";
             this.toolStrip1.ResumeLayout(false);

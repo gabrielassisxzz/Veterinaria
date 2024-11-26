@@ -1,6 +1,6 @@
 ﻿namespace Veterinaria.view
 {
-    partial class FrmClientetelefone
+    partial class FrmClienteTelefone
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grbClienteTel = new System.Windows.Forms.GroupBox();
+            this.grbEndereco = new System.Windows.Forms.GroupBox();
             this.cmbTelefone = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.cmbCliente = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -49,59 +49,53 @@
             this.txtBuscar = new System.Windows.Forms.ToolStripTextBox();
             this.btnBuscar = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.txtCliente = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.grbClienteTel.SuspendLayout();
+            this.grbEndereco.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // grbClienteTel
+            // grbEndereco
             // 
-            this.grbClienteTel.Controls.Add(this.cmbTelefone);
-            this.grbClienteTel.Controls.Add(this.label7);
-            this.grbClienteTel.Controls.Add(this.cmbCliente);
-            this.grbClienteTel.Controls.Add(this.label4);
-            this.grbClienteTel.Location = new System.Drawing.Point(19, 102);
-            this.grbClienteTel.Name = "grbClienteTel";
-            this.grbClienteTel.Size = new System.Drawing.Size(269, 154);
-            this.grbClienteTel.TabIndex = 41;
-            this.grbClienteTel.TabStop = false;
-            this.grbClienteTel.Text = "ClienteTell";
-            this.grbClienteTel.Enter += new System.EventHandler(this.grbEndereco_Enter);
+            this.grbEndereco.Controls.Add(this.cmbTelefone);
+            this.grbEndereco.Controls.Add(this.label6);
+            this.grbEndereco.Controls.Add(this.cmbCliente);
+            this.grbEndereco.Controls.Add(this.label4);
+            this.grbEndereco.Location = new System.Drawing.Point(7, 74);
+            this.grbEndereco.Name = "grbEndereco";
+            this.grbEndereco.Size = new System.Drawing.Size(194, 88);
+            this.grbEndereco.TabIndex = 58;
+            this.grbEndereco.TabStop = false;
             // 
             // cmbTelefone
             // 
             this.cmbTelefone.FormattingEnabled = true;
-            this.cmbTelefone.Location = new System.Drawing.Point(63, 78);
+            this.cmbTelefone.Location = new System.Drawing.Point(86, 24);
             this.cmbTelefone.Name = "cmbTelefone";
-            this.cmbTelefone.Size = new System.Drawing.Size(169, 21);
-            this.cmbTelefone.TabIndex = 23;
+            this.cmbTelefone.Size = new System.Drawing.Size(90, 21);
+            this.cmbTelefone.TabIndex = 21;
             // 
-            // label7
+            // label6
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(11, 81);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 13);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "Telefone:";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(9, 32);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 13);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Telefone:";
             // 
             // cmbCliente
             // 
             this.cmbCliente.FormattingEnabled = true;
-            this.cmbCliente.Location = new System.Drawing.Point(63, 51);
+            this.cmbCliente.Location = new System.Drawing.Point(86, 51);
             this.cmbCliente.Name = "cmbCliente";
-            this.cmbCliente.Size = new System.Drawing.Size(169, 21);
+            this.cmbCliente.Size = new System.Drawing.Size(90, 21);
             this.cmbCliente.TabIndex = 17;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 54);
+            this.label4.Location = new System.Drawing.Point(9, 54);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 13);
             this.label4.TabIndex = 16;
@@ -128,8 +122,8 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(602, 39);
-            this.toolStrip1.TabIndex = 38;
+            this.toolStrip1.Size = new System.Drawing.Size(649, 39);
+            this.toolStrip1.TabIndex = 57;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // btnNovo
@@ -264,66 +258,29 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(36, 36);
             this.toolStripButton1.Text = "toolStripButton1";
-            // 
-            // txtCliente
-            // 
-            this.txtCliente.Enabled = false;
-            this.txtCliente.Location = new System.Drawing.Point(57, 54);
-            this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(363, 20);
-            this.txtCliente.TabIndex = 37;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
-            this.label2.TabIndex = 36;
-            this.label2.Text = "Nome:";
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Enabled = false;
-            this.txtCodigo.Location = new System.Drawing.Point(57, 18);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(86, 20);
-            this.txtCodigo.TabIndex = 35;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "Código:";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(5, 262);
+            this.dataGridView1.Location = new System.Drawing.Point(222, 58);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(585, 125);
-            this.dataGridView1.TabIndex = 33;
+            this.dataGridView1.Size = new System.Drawing.Size(385, 125);
+            this.dataGridView1.TabIndex = 59;
             // 
             // FrmClienteTelefone
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(602, 397);
-            this.Controls.Add(this.grbClienteTel);
-            this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.txtCliente);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtCodigo);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(649, 195);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.grbEndereco);
+            this.Controls.Add(this.toolStrip1);
             this.Name = "FrmClienteTelefone";
             this.Text = "FrmClienteTelefone";
-            this.grbClienteTel.ResumeLayout(false);
-            this.grbClienteTel.PerformLayout();
+            this.grbEndereco.ResumeLayout(false);
+            this.grbEndereco.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -334,9 +291,9 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox grbClienteTel;
+        private System.Windows.Forms.GroupBox grbEndereco;
         private System.Windows.Forms.ComboBox cmbTelefone;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cmbCliente;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ToolStrip toolStrip1;
@@ -355,10 +312,6 @@
         private System.Windows.Forms.ToolStripTextBox txtBuscar;
         private System.Windows.Forms.ToolStripButton btnBuscar;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.TextBox txtCliente;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtCodigo;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

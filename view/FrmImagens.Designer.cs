@@ -61,7 +61,7 @@
             // 
             // Picture
             // 
-            this.Picture.Location = new System.Drawing.Point(361, 130);
+            this.Picture.Location = new System.Drawing.Point(285, 51);
             this.Picture.Margin = new System.Windows.Forms.Padding(2);
             this.Picture.Name = "Picture";
             this.Picture.Size = new System.Drawing.Size(404, 256);
@@ -90,7 +90,7 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 39);
+            this.toolStrip1.Size = new System.Drawing.Size(697, 39);
             this.toolStrip1.TabIndex = 18;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -233,7 +233,7 @@
             this.txtDescrição.Enabled = false;
             this.txtDescrição.Location = new System.Drawing.Point(72, 77);
             this.txtDescrição.Name = "txtDescrição";
-            this.txtDescrição.Size = new System.Drawing.Size(517, 20);
+            this.txtDescrição.Size = new System.Drawing.Size(208, 20);
             this.txtDescrição.TabIndex = 17;
             // 
             // label2
@@ -248,9 +248,9 @@
             // txtCodigo
             // 
             this.txtCodigo.Enabled = false;
-            this.txtCodigo.Location = new System.Drawing.Point(68, 51);
+            this.txtCodigo.Location = new System.Drawing.Point(72, 51);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(86, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(147, 20);
             this.txtCodigo.TabIndex = 15;
             // 
             // label1
@@ -268,7 +268,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(11, 130);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(330, 256);
+            this.dataGridView1.Size = new System.Drawing.Size(269, 177);
             this.dataGridView1.TabIndex = 13;
             // 
             // cmbProduto
@@ -276,7 +276,7 @@
             this.cmbProduto.FormattingEnabled = true;
             this.cmbProduto.Location = new System.Drawing.Point(72, 103);
             this.cmbProduto.Name = "cmbProduto";
-            this.cmbProduto.Size = new System.Drawing.Size(169, 21);
+            this.cmbProduto.Size = new System.Drawing.Size(208, 21);
             this.cmbProduto.TabIndex = 23;
             // 
             // label6
@@ -294,7 +294,7 @@
             // 
             // btnImagem
             // 
-            this.btnImagem.Location = new System.Drawing.Point(263, 106);
+            this.btnImagem.Location = new System.Drawing.Point(224, 52);
             this.btnImagem.Margin = new System.Windows.Forms.Padding(2);
             this.btnImagem.Name = "btnImagem";
             this.btnImagem.Size = new System.Drawing.Size(56, 19);
@@ -307,7 +307,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(697, 321);
             this.Controls.Add(this.btnImagem);
             this.Controls.Add(this.cmbProduto);
             this.Controls.Add(this.label6);
